@@ -18,7 +18,7 @@ namespace ObligatoriskOpgave.Tests
             Trophy trophy = new Trophy() { Competition = null };
             Assert.ThrowsException<ArgumentNullException>(() => trophy.ValidateCompetition());
 
-            trophy.Competition = "UCLS";
+            trophy.Competition = "UL";
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => trophy.ValidateCompetition());
 

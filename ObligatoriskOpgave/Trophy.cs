@@ -19,7 +19,7 @@ namespace ObligatoriskOpgave
                 throw new ArgumentNullException("Competition cannot be null");
             }
 
-            if (Competition.Length > 3)
+            if (Competition.Length < 3)
             {
                 throw new ArgumentOutOfRangeException("string must be at least 3 characters");
             }
